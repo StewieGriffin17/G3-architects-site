@@ -161,6 +161,72 @@ header img{
     height: 90%;
     margin-left: 60px;
 }
+.facts{
+    padding: 0px 240px 180px 240px;
+}
+.facts-title, .sponsors-title{
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+}
+.facts-des{
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 24px;
+    margin-bottom: 100px;
+    max-width: 542px;
+}
+.facts-card{
+    display: flex;
+    justify-content: space-between;
+}
+.facts-cards-content{
+    border-radius: 8px; 
+    border: 0.50px solid #FF900E;
+    padding: 50px 80px;
+    text-align: center;
+}
+.facts-cards-title{
+    color: #424242;
+    font-size: 45px;
+    font-weight: 600;
+}
+.facts-cards-des{
+    color: #727272;
+    font-size: 20px;
+    font-weight: 600;
+}
+.sponsors{
+    padding: 0px 240px 130px 240px;
+    text-align: center;
+}
+.sponsors-img{
+    display: flex;
+    gap: 155px;
+}
+.sponsors-des{
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 24px;
+    margin-bottom: 50px;
+}
+footer{
+    padding: 50px 240px 100px 240px;
+}
+.footer-des{
+    color: #424242;
+    font-size: 20px;
+    font-weight: 400;
+    background: #FFF4E7; 
+    border-radius: 8px;
+    text-align: center;
+    padding: 39px 400px;
+}
+
 
 /* responsive - small devices */
 @media screen and (max-width:576px) {
@@ -193,6 +259,7 @@ header img{
     .team-img{
         grid-template-columns: 1fr;
         gap: 10px;
+        margin-left: -17.5px;
     }
     .features{
         flex-direction: column;
@@ -217,6 +284,31 @@ header img{
         position: relative;
         bottom: 20px;
     }
+    .facts{
+        padding: 50px;
+    }
+    .facts-card{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .facts-des{
+        margin-bottom: 60px;
+    }
+    .sponsors{
+        padding: 50px;
+    }
+    .sponsors-img{
+        flex-direction: column;
+    }
+    footer{
+        padding:0;
+        margin-top: 20px;
+    }
+    .footer-des{
+        padding:50px 10px ;
+        border-radius: 0;
+    }
+
 }
 
 /* responsive - medium devices */
@@ -249,7 +341,8 @@ header img{
         margin-top: 5px;
     }
     .team-img{
-        grid-template-columns:1fr;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
         gap: 10px;
     }
     .features{
@@ -274,5 +367,48 @@ header img{
         font-size: 1rem;
         position: relative;
         bottom: 20px;
+    }
+    .facts{
+        padding: 50px;
+    }
+    .facts-card{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+    .facts-des{
+        margin-bottom: 60px;
+    }
+    .sponsors{
+        padding: 50px;
+    }
+    .one{
+        grid-area: one;
+    }
+    .two{
+        grid-area: two;
+    }
+    .three{
+        grid-area: three;
+    }
+    .four{
+        grid-area: four;
+    }
+    .five{
+        grid-area: five;
+    }
+    .sponsors-img{
+        display: grid;
+        grid-template-areas: 
+        "one one two two three three"
+        ". four four five five .";
+    }   
+    footer{
+        padding:0;
+        margin-top: 20px;
+    }
+    .footer-des{
+        padding:50px 10px ;
+        border-radius: 0;
     }
 }
